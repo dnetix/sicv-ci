@@ -1,0 +1,626 @@
+@media screen {
+	
+	@font-face {
+	    font-family: 'Open Sans';
+	    src: url('opensans-light-webfont.eot');
+	    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('opensans-light-webfont.woff') format('woff'),
+	         url('opensans-light-webfont.ttf') format('truetype'),
+	         url('opensans-light-webfont.svg#open_sanslight') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Wol';
+	    src: url('wol.eot') format('eot');
+	    src: url('wol.eot?#iefix') format('eot'),
+	         url('wol.woff') format('woff'),
+	         url('wol.ttf') format('truetype'),
+	         url('wol.svg#web') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+}
+
+body {
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #EA5A24;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-family: 'Wol', Arial;
+	margin: 0 0 10px 0;
+}
+
+input[type="text"], input[type="password"] {
+	border: solid 1px #C0C0C0;
+	background: #FFFFFF;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+select {
+	border: solid 1px #C0C0C0;
+	background: #FFFFFF;
+	padding: 5px 0 5px 4px;
+}
+
+textarea {
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+	border: solid 1px #C0C0C0;
+	background: #FFFFFF;
+	padding: 5px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	border: solid 1px #4D90FE;
+	outline: none;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.off {
+	display: none;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.space {
+	padding: 0 20px 0 15px;
+}
+
+.centered {
+	text-align: center;
+}
+
+/** CSS para header **/
+	
+	#header {
+		width: 100%;
+		height: 90px;
+		background: #000000;
+	}
+	
+	#header_wrapper {
+		width: 1090px;
+		height: 100%;
+		margin: auto;
+	}
+	
+		#top_logo_container {
+			display: inline-block;
+			vertical-align: top;
+			width: 200px;
+			height: 100%;
+			margin: 0 20px 0 0;
+		}
+		
+			#top_logo_container a {
+				display: table-cell;
+				vertical-align: middle;
+				height: 90px;
+			}
+		
+		#topmenu {
+			display: inline-block;
+			vertical-align: top;
+			height: 90px;
+			
+		}
+		
+			#topmenu ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				text-transform: uppercase;
+			}
+			
+			#topmenu ul li:first-child a {
+				border-left: none;
+			}
+			
+			#topmenu ul li {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			#topmenu ul li a {
+				display: block;
+				text-decoration: none;
+				text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.2);
+				color: #CCCCCC;
+				font-family: 'Open Sans', Arial;
+				font-size: 16px;
+				height: 20px;
+				margin: 15px 0 15px 0;
+				padding: 20px 15px;
+			}
+			
+			#topmenu ul li:hover {
+				background: #45484d; /* Old browsers */
+				background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
+			}
+			
+			#topmenu ul li:hover > ul {
+				display: block;
+			}
+			
+			#topmenu ul li:hover > a {
+				color: #FFFFFF;
+			}
+			
+			#topmenu ul ul li a {
+				color: #333333;
+				text-shadow: none;
+				width: 200px;
+				padding: 5px 10px;
+				margin: 0;
+			}
+			
+			#topmenu ul ul {
+				display: none;
+				position: absolute;
+				z-index: 100;
+				top: 100%;
+				background: #FFFFFF;
+				border: solid 1px #CCCCCC;
+				text-transform: none;
+			}
+			
+			#topmenu ul ul li {
+				display: block;
+				border: none;
+			}
+			
+			#topmenu ul ul li:hover {
+				background: #CCCCCC;
+			}
+			
+			#topmenu ul ul li a:hover {
+				color: #EA5A24;
+			}
+			
+		#top_buscador {
+			display: inline-block;
+			vertical-align: top;
+			background: #CCCCCC;
+			margin: 2.5% 0;
+		}
+		
+			#top_buscador input[type="text"] {
+				vertical-align: top;
+				padding: 8px;
+				background: none;
+				border: none;
+				margin-bottom: 0;
+			}
+			
+			#top_buscador input[type="text"]:focus {
+				background: #F7F7F7;
+			}
+			
+				#top_buscador input[type="text"]:focus {
+					box-shadow: 1px 1px 2px rgba(77, 144, 254, 0.8);
+				}
+		
+			#top_buscador input[type="submit"] {
+				vertical-align: top;
+				font-size: 16px;
+				margin: 0;
+				padding: 5px;
+			}
+			
+	#subheader_wrapper {
+		padding-top: 5px;
+		margin-bottom: 10px;
+		background-color: #333333;
+		color: #FFFFFF;
+		border-bottom: solid 1px #CCCCCC;
+	}
+	
+		#subheader {
+			width: 1024px;
+			margin: auto;
+		}
+		
+		#subheader p {
+			text-align: right;
+			margin-bottom: 5px;
+		}
+		
+/** CSS para contenidos generales **/
+	
+	#main_container, .sub_content {
+		width: 1024px;
+		margin: auto;
+	}
+	
+		#main_container input[type="text"] {
+			padding: 5px 8px;
+		}
+		
+	.small_wrap {
+		display: inline-block;
+		vertical-align: top;
+		width: 280px;
+	}
+	
+	.big_wrap {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 0 10px;
+		width: 730px;
+	}
+
+/** CSS de cajas estilo Win8 **/
+	
+	.small_box {
+		width: 260px;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	
+	a.small_box {
+		display: block;
+		width: 190px;
+		height: 60px;
+		padding-left: 80px;
+	}
+		
+		.small_box h2 {
+			margin: 0 0 2px 0;
+		}
+		
+		.small_box .icon {
+			display: inline-block;
+			vertical-align: top;
+			width: 65px;
+			height: 60px;
+		}
+		
+		.small_box .content {
+			display: inline-block;
+			vertical-align: top;
+			width: 190px;
+			height: 60px;
+		}
+		
+			.small_box .client {
+				background: url('../img/icon_client.png') no-repeat;
+			}
+			
+			a.newcontract {
+				background-image: url('../img/icon_newcontract.png');
+				background-repeat: no-repeat;
+				background-position: 10px 10px;
+			}
+			
+			a.goldprice {
+				background-image: url('../img/icon_goldbar.png');
+				background-repeat: no-repeat;
+				background-position: 10px 10px;
+			}
+			
+	.big_box {
+		width: 710px;
+		padding: 10px;
+		position: relative;
+		margin-bottom: 5px;
+	}
+	
+	.blue {
+		color: #FFFFFF;
+		background-color: #29A9E0;
+	}
+	
+		.blue .format tbody tr:hover {
+			background: #5C41A8;
+			cursor: pointer;
+		}
+	
+	.purple {
+		color: #FFFFFF;
+		background-color: #5C41A8;
+	}
+	
+		.purple a {
+			color: #F9AE3B;
+			font-weight: bold;
+		}
+		
+		.purple .format tbody tr:hover {
+			background: #4658B8;
+		}
+		
+	.yellow {
+		color: #333333;
+		background-color: #FFDB20;
+	}
+		
+		.yellow a {
+			color: #333333;
+		}
+		
+	.orange {
+		color: #FFFFFF;
+		background-color: #C75733;
+	}
+		
+		.orange a {
+			color: #1B1464;
+		}
+		
+		.orange .format tbody tr:hover {
+			background: #F9AE3B;
+		}
+		
+	.green {
+		color: #FFFFFF;
+		background-color: #0A820B;
+	}
+		
+		.green a {
+			color: #2E3190;
+		}
+		
+		.green .format tbody tr:hover {
+			background: #006837;
+		}
+	
+	
+/** CSS tamaños predefinidos **/
+
+
+.s_idcliente {
+	width: 160px;
+}
+
+.s_fecha {
+	width: 70px;
+}
+
+.s_datetime {
+	width: 120px;
+}
+
+.s_valor {
+	width: 140px;
+}
+
+.s_nombre {
+	width: 280px;
+}
+
+.s_direccion {
+	width: 320px;
+}
+
+.s_articulo {
+	width: 520px;
+	height: 50px;
+}
+
+.s_peso {
+	width: 50px;
+}
+
+.s_tipoarticulo {
+	width: 190px;
+}
+
+.s_meses {
+	width: 40px;
+}
+
+.s_porcentaje {
+	width: 40px;
+}
+
+#ajax_cliente {
+	display: none;
+}
+
+#client_selector {
+	margin: 0 10px;
+}
+
+	#client_selector .nombre {
+		width: 270px;
+	}
+	
+	#client_selector .identificacion {
+		text-align: center;
+		width: 130px;
+	}
+	
+	#client_selector .telefono {
+		text-align: center;
+		width: 170px;
+	}
+	
+	#client_selector .opcion {
+		text-align: center;
+	}
+	
+	#btn_nuevocliente {
+		width: 250px;
+	}
+	
+	#wrp_nuevocliente table {
+		width: 100%;
+	}
+	
+	#wrp_nuevocliente a {
+		width: 180px;
+	}
+	
+	#wrp_nuevocliente .buttons {
+		padding-top: 20px;
+	}
+	
+.format th {
+	text-align: center;
+	padding: 5px;
+}
+
+.format td {
+	padding: 4px 5px;
+}
+
+#filtros {
+	width: 100%;
+	color: #FFFFFF;
+	padding: 5px 8px;
+	margin-bottom: 20px;
+	background-color: #C75733;
+}
+
+/** CSS de Botones **/
+	
+	a.blue_button, a.green_button, a.red_button {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.blue_button {
+		text-align: center;
+		background-color: #4D90FE;
+		border: 1px solid #3079ED;
+		font-size: 16px;
+		color: #FFFFFF;
+		transition: all 0.218s ease 0s;
+		padding: 5px;
+	}
+
+		.blue_button:hover {
+			background: #0E9B0E;
+			border: solid 1px #0A840B;
+		}
+		
+	.green_button {
+		text-align: center;
+		background-color: #0E990E;
+		border: 1px solid #3079ED;
+		font-size: 16px;
+		color: #FFFFFF;
+		transition: all 0.218s ease 0s;
+		padding: 5px;
+	}
+
+		.green_button:hover {
+			background-color: #0A820B;
+			border: solid 1px #0E9B0E;
+		}
+		
+	.red_button {
+		text-align: center;
+		background-color: #BF272D;
+		border: 1px solid #A42647;
+		
+		font-size: 16px;
+		color: #FFFFFF;
+		transition: all 0.218s ease 0s;
+		padding: 5px;
+	}
+
+		.red_button:hover {
+			background-color: #A42647;
+			border: solid 1px #BF272D;
+		}
+		
+	.btn_calendar {
+		text-align: center;
+		background-color: #4D90FE;
+		background-image: url('../img/btn_calendar.png');
+		background-repeat: no-repeat;
+		background-position: 5px 4px;
+		width: 30px;
+		border: 1px solid #3079ED;
+		color: #FFFFFF;
+		transition: all 0.218s ease 0s;
+		padding: 5px;
+	}
+	
+		.btn_calendar:hover {
+			background-color: #0E9B0E;
+			border: solid 1px #0A840B;
+		}
+		
+	.btn_remove {
+		text-align: center;
+		background-color: #EB1C24;
+		background-image: url('../img/btn_remove.png');
+		background-repeat: no-repeat;
+		background-position: 5px 4px;
+		width: 30px;
+		border: 1px solid #EF5A24;
+		color: #FFFFFF;
+		transition: all 0.218s ease 0s;
+		padding: 5px;
+	}
+	
+		.btn_calendar:hover {
+			background-color: #BF272D;
+			border: solid 1px #EB1C24;
+		}
+	
+	a.select {
+		background-image: url('../img/btn_select.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 100%;
+		height: 20px;
+	}
+
+/*** CSS para mensaje ***/
+
+	.msg_info {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		min-height: 20px;
+		padding: 10px 20px 10px 50px;
+		color: #FFFFFF;
+		background: url('../img/info.png') no-repeat #87C13F;
+	}
+
+	.msg_error {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		min-height: 20px;
+		padding: 10px 20px 10px 50px;
+		color: #FFFFFF;
+		background: url('../img/error.png') no-repeat #BC272D;
+	}

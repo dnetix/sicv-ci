@@ -1,0 +1,336 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'ITC';
+    src: url('itcavantgardestd-bk.eot');
+    src: url('itcavantgardestd-bk.eot') format('embedded-opentype'),
+         url('itcavantgardestd-bk.woff') format('woff'),
+         url('itcavantgardestd-bk.ttf') format('truetype'),
+         url('itcavantgardestd-bk.svg#ITCAvantGardeGothicStdBook') format('svg');
+}
+
+body {
+	font-family: "ITC", Arial, Helvetica;
+	font-size: 15px;
+	color: #1A1A1A;
+}
+
+a {
+	text-decoration: none;
+}
+
+	ul {
+		list-style: none;
+	}
+	
+	input {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+	}
+	
+	select {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+	}
+	
+	textarea {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+		font-size: 15px;
+	}
+	
+	.center {
+		text-align: center;
+	}
+
+#login {
+	width: 100%;
+	background: #F3F3F3;
+	margin-top: 15%; 
+}
+
+	#login_wrapper {
+		width: 680px;
+		margin: auto;
+	}
+	
+		#logo_container {
+			display: inline-block;
+			vertical-align: top;
+			padding: 40px;
+		}
+		
+		#login_container {
+			display: inline-block;
+			vertical-align: top;
+			padding: 40px;
+		}
+
+header {
+	width: 100%;
+	background: #333333;
+	height: 35px;
+	border-bottom: 1px solid #808080;
+}
+	
+	#header_wrapper {
+		width: 984px;
+		margin: auto;
+		padding: 0 20px;
+	}
+	
+	header .menu ul {
+		background: #333333;
+		position: relative;
+	}
+	
+		header .menu a {
+			display: inline-block;
+			width: 100px;
+			padding: 5px;
+			text-align: center;
+		}
+		
+		header .menu ul ul a {
+			display: block;
+			text-align: center;
+			width: 150px;
+		}
+		
+		header .menu a:hover {
+			background: #002200;
+		}
+		
+		header .menu ul ul li {
+			display: block;
+			text-align: center;
+		}
+	
+	header .menu ul ul {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		top: 100%;
+		padding: 5px;
+	}
+	
+	header .menu ul li:hover > ul {
+		display: block;
+	}
+	
+	header .menu a {
+		color: #FFFFFF;
+	}
+	
+	header .menu li {
+		display: inline-block;
+	}
+	
+	header .menu {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#top_buscador {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#fast_contrato:focus {
+		background: #FF9922;
+	}
+	
+	header .btn_config {
+		margin-top: 5px;
+	}
+	
+	.btn_config {
+		background: url('../img/config.png') no-repeat;
+		width: 32px;
+		height: 22px;
+		display: inline-block;
+	}
+	
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+	
+#main_container {
+	width: 1024px;
+	margin: auto;
+}
+
+	#left_container {
+		width: 685px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#right_container {
+		width: 240px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+#ajax_cliente {
+	display: none;
+}
+
+	.buttons {
+		text-align: center;
+	}
+	
+.form td {
+	padding: 5px;
+}
+
+.small_hint {
+	font-size: 12px;
+}
+
+/**
+ * 	Input Sizes
+ */
+
+.s_idcliente {
+	width: 120px;
+}
+
+.s_nombre {
+	width: 300px;
+}
+
+.s_articulo {
+	width: 460px;
+}
+
+.s_fecha {
+	width: 80px;
+}
+
+.s_direccion {
+	
+}
+
+.s_telefono {
+	width: 100px;
+}
+
+.s_email {
+	width: 250px;
+}
+
+.s_ciudad {
+	
+}
+
+.s_peso {
+	width: 50px;
+}
+
+.s_valor{
+	width: 100px;
+}
+
+.s_meses {
+	width: 40px;
+}
+
+.s_contrato {
+	width: 80px;
+}
+
+.s_porcentaje {
+	width: 40px;
+}
+
+.vencidos {
+	font-size: 12px;
+}
+
+.inf_articulo {
+	width: 360px;
+}
+
+/** CSS INFORME */
+
+	#informe table {
+		border-collapse: collapse;
+	}
+	
+	#informe .odd {
+		background: #F4F0E8;
+	}
+	
+	#informe td {
+		padding: 5px;
+	}
+	
+	#informe tr:hover {
+		background: #29ABE2;
+	}
+	
+	#informe .selected {
+		background: #8CC63F;
+	}
+	
+	#informe h2 {
+		margin-bottom: 20px;
+	}
+	
+	#filtros {
+		border: solid 1px #808080;
+		border-radius: 2px;
+		margin: 10px 0;
+		padding: 5px;
+	}
+	
+	.input_calendar {
+		background: url('../img/button_calendar.png') no-repeat;
+		width: 20px;
+		height: 20px;
+		border: none;
+		padding-top: 2px;
+	}
+	
+/*** CSS para mensaje ***/
+
+	.msg_info {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		min-height: 20px;
+		padding: 10px 20px 10px 50px;
+		color: #FFFFFF;
+		background: url('../img/info.png') no-repeat #87C13F;
+	}
+
+	.msg_error {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		min-height: 20px;
+		padding: 10px 20px 10px 50px;
+		color: #FFFFFF;
+		background: url('../img/error.png') no-repeat #BC272D;
+	}
+
+	#totalizado {
+		margin-bottom: 20px;
+	}
+	
+	#totalizado p {
+		text-align: center;
+	}
+
+#ajax_oro {
+	display: none;
+}
+

@@ -1,0 +1,200 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'ITC';
+    src: url('itcavantgardestd-bk.eot');
+    src: url('itcavantgardestd-bk.eot') format('embedded-opentype'),
+         url('itcavantgardestd-bk.woff') format('woff'),
+         url('itcavantgardestd-bk.ttf') format('truetype'),
+         url('itcavantgardestd-bk.svg#ITCAvantGardeGothicStdBook') format('svg');
+}
+
+body {
+	font-family: "ITC", Arial, Helvetica;
+	font-size: 15px;
+	color: #1A1A1A;
+}
+
+a {
+	text-decoration: none;
+}
+
+	ul {
+		list-style: none;
+	}
+	
+	input {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+	}
+	
+	select {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+	}
+	
+	textarea {
+		padding: 3px;
+		font-family: 'ITC', Helvetica;
+		font-size: 15px;
+	}
+
+#login {
+	width: 100%;
+	background: #F3F3F3;
+	margin-top: 10%; 
+}
+
+	#login_wrapper {
+		width: 680px;
+		margin: auto;
+	}
+	
+		#logo_container {
+			display: inline-block;
+			vertical-align: top;
+			padding: 40px;
+		}
+		
+		#login_container {
+			display: inline-block;
+			vertical-align: top;
+			padding: 40px;
+		}
+
+header {
+	width: 100%;
+	background: #333333;
+	height: 35px;
+	border-bottom: 1px solid #808080;
+}
+	
+	#header_wrapper {
+		width: 984px;
+		margin: auto;
+		padding: 0 20px;
+	}
+	
+	header .menu ul {
+		background: #333333;
+		position: relative;
+	}
+	
+	header .menu ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+	}
+	
+	header .menu ul li:hover > ul {
+		display: block;
+	}
+	
+	header .menu a {
+		color: #FFFFFF;
+	}
+	
+	header .menu li {
+		display: inline-block;
+	}
+	
+	header .menu {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#top_buscador {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+#main_container {
+	width: 1024px;
+	margin: auto;
+}
+
+	#left_container {
+		width: 685px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#right_container {
+		width: 240px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+#ajax_cliente {
+	display: none;
+}
+
+	.buttons {
+		text-align: center;
+	}
+	
+.form td {
+	padding: 5px;
+}
+
+/**
+ * 	Input Sizes
+ */
+
+.s_idcliente {
+	width: 120px;
+}
+
+.s_nombre {
+	width: 300px;
+}
+
+.s_articulo {
+	width: 460px;
+}
+
+.s_fecha {
+	width: 80px;
+}
+
+.s_direccion {
+	
+}
+
+.s_telefono {
+	
+}
+
+.s_ciudad {
+	
+}
+
+.s_peso {
+	width: 50px;
+}
+
+.s_valor{
+	width: 100px;
+}
+
+.s_meses {
+	width: 40px;
+}
+
+.s_contrato {
+	width: 80px;
+}
+
+.s_porcentaje {
+	width: 40px;
+}
+
+.vencidos {
+	font-size: 12px;
+}

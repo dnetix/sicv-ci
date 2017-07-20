@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'code128';
+    src: url('code128-webfont.eot');
+    src: url('code128-webfont.eot?#iefix') format('embedded-opentype'),
+         url('code128-webfont.woff') format('woff'),
+         url('code128-webfont.ttf') format('truetype'),
+         url('code128-webfont.svg#code_128regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#contrato_page {
+	width: 1030px;
+	height: 780px;
+}
+
+	#contrato_page .buttons a {
+		width: 140px;
+	}
+
+#contrato_wrapper {
+	position: relative;
+	height: 780px;
+	width: 480px;
+	margin: auto;
+	font-size: 10px;
+}
+
+	#contrato_wrapper_prev {
+		position: relative;
+		height: 200px;
+		width: 500px;
+		margin: auto;
+	}
+
+.barcode {
+	font-family: 'code128';
+	font-size: 60px;
+	text-align: center;
+}
+	
+/** CSS DE CONTRATO **/
+	
+	.titulo {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	#partes, #legal {
+		
+	}
+	
+	#datoscompraventa {
+		width: 275px;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 10px;
+		text-align: center;
+	}
+	
+	#serial {
+		width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+	
+		#serial h3 span {
+			font-size: 25px;
+		}
+	
+	#contrato {
+		margin: 5px 0 0 0;
+		text-align: justify;
+	}
+	
+	#articulo {
+		margin: 10px;
+	}
+	
+		#articulo h4, #clausulas h4 {
+			margin: 10px 0;
+			text-align: center;
+		}
+		
+	#clausulas {
+		margin: 10px 0 10px 0;
+		font-size: 10px;
+	}
+	
+	#firmavendedor, #firmacomprador {
+		display: inline-block;
+		vertical-align: top;
+		margin: 45px 10px 0 10px;
+		width: 180px;
+		border-top: solid 1px #000;
+	}
+	
+	.huella {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 10px;
+		width: 60px;
+		height: 60px;
+		border: solid 1px #000;
+		border-radius: 4px;
+	}
+	
+	.buttons {
+		margin: 20px 0;
+	}
+	
+/**  CSS NOTAS DE COBRO  **/
+	
+	#n_info {
+		width: 900px;
+		margin: 30px auto 0 auto;
+	}
+	
+		.n_datos {
+			width: 300px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.n_cliente {
+			width: 500px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+			.n_titulo {
+				font-size: 26px;
+			}
+			
+			.n_fecha {
+				font-size: 20px;
+			}
+			
+			.n_idcliente {
+				
+			}
+			
+			.n_cliente {
+				
+			}
+	
+	.n_articulos {
+		width: 700px;
+		margin: 40px auto 0 auto;
+	}
+		
+		.n_articulos table {
+			border-collapse: collapse;
+		}
+		
+		.n_articulos th {
+			padding: 5px;
+			background: #E1E1E1;
+			text-align: center;
+		}
+		
+		.n_articulos td {
+			padding: 5px;
+		}
+		
+			.n_idarticulo {
+				width: 70px;
+				text-align: center;
+			}
+			
+			.n_descripcion {
+				width: 410px;
+			}
+			
+			.n_cantidad {
+				text-align: center;
+				width: 80px;
+			}
+			
+			.n_precio {
+				width: 100px;
+				text-align: center;
+			}
+			
+	.n_footer {
+		width: 900px;
+		margin: 80px auto 0 auto;
+	}
+	
+	.n_legal {
+		width: 590px;
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	
+	.n_firma {
+		border-top: solid 1px #E1E1E1;
+		width: 300px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	
+/** CSS IMPRESION DE SELLOS **/
+	
+	#sellos_container {
+		width: 830px;
+		margin: auto;
+	}
+	
+	.c_sello {
+		width: 180px;
+		height: 160px;
+		padding: 10px;
+		border: solid 1px #777777;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+		.c_sello h3 {
+			margin-bottom: 10px;
+		}
+	
+		.sello_articulo {
+			font-size: 10px;
+		}
+		
+@media print {
+	
+	#header, #subheader_wrapper, .buttons {
+		display: none;
+	}
+	
+	#contrato_wrapper {
+		margin: 0 0 0 540px;
+	}
+	
+	#filtros {
+		display: none;
+	}
+}
